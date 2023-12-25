@@ -636,3 +636,37 @@ section {
   margin-inline: auto;
   margin-block-start: 40px;
 }
+
+/* === Experience === */
+.experience .container {
+  display: grid;
+  gap: 50px;
+}
+.experience-banner {
+  position: relative;
+}
+.experience .section-text {
+  margin-block-end: 20px;
+}
+.experience-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-block-start: 15px;
+}
+.item-title {
+  color: var(--bg-majorelle-blue);
+  font-size: 3.6rem;
+  font-weight: var(--weight-bold);
+}
+.item-text {
+  line-height: 1.3;
+}
+.experience-shape {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 25%;
+  filter: drop-shadow(var(--shadow-4));
+  -webkit-filter: drop-shadow(var(--shadow-4));
+}
