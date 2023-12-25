@@ -670,3 +670,19 @@ section {
   filter: drop-shadow(var(--shadow-4));
   -webkit-filter: drop-shadow(var(--shadow-4));
 }
+
+/* === Gallery === */
+.gallery .section-title {
+  margin-block-end: 40px;
+}
+.gallery-list {
+  display: grid;
+  gap: 15px;
+}
+.item-banner {
+  border-radius: var(--radius-30);
+  -webkit-border-radius: var(--radius-30);
+  -moz-border-radius: var(--radius-30);
+  -ms-border-radius: var(--radius-30);
+  -o-border-radius: var(--radius-30);
+}
