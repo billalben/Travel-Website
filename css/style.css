@@ -196,6 +196,14 @@ section {
 .w-100 {
   width: 100%;
 }
+.section-subtitle {
+  color: var(--bg-majorelle-blue);
+  font-weight: var(--weight-medium);
+  text-transform: uppercase;
+}
+.section-title {
+  margin-block: 10px;
+}
 
 /* === Preloader === */
 .preloader {
@@ -422,6 +430,7 @@ section {
   left: 0;
   bottom: 0;
   width: 100%;
+  min-height: 100vh;
   background-color: var(--bg-white);
   opacity: 0;
   visibility: hidden;
@@ -519,4 +528,30 @@ section {
 }
 .hero-btn:where(:hover, :focus-visible) {
   color: var(--text-majorelle-blue);
+}
+
+/* === Service === */
+.service .container {
+  display: grid;
+  gap: 25px;
+}
+.service-card:nth-child(2) {
+  background-color: var(--bg-chrome-yellow-alpha-5);
+}
+.service-card:nth-child(3) {
+  background-color: var(--bg-red-salsa-alpha-5);
+}
+.service-card:nth-child(4) {
+  background-color: var(--bg-majorelle-blue-alpha-5);
+}
+.service-card {
+  padding: 25px 20px;
+  border-radius: var(--radius-20);
+  -webkit-border-radius: var(--radius-20);
+  -moz-border-radius: var(--radius-20);
+  -ms-border-radius: var(--radius-20);
+  -o-border-radius: var(--radius-20);
+}
+.service-card .card-title {
+  margin-block: 10px 5px;
 }
