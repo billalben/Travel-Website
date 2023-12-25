@@ -204,6 +204,11 @@ section {
 .section-title {
   margin-block: 10px;
 }
+.img-holder {
+  aspect-ratio: var(--width) / var(--height);
+  background-color: var(--bg-gainsboro);
+  overflow: hidden;
+}
 
 /* === Preloader === */
 .preloader {
@@ -554,4 +559,80 @@ section {
 }
 .service-card .card-title {
   margin-block: 10px 5px;
+}
+
+/* === Destination === */
+.destination .section-title {
+  margin-block-end: 40px;
+}
+.destination-list {
+  display: grid;
+  gap: 30px;
+}
+.destination-card .card-banner {
+  position: relative;
+  border-radius: var(--radius-30);
+  -webkit-border-radius: var(--radius-30);
+  -moz-border-radius: var(--radius-30);
+  -ms-border-radius: var(--radius-30);
+  -o-border-radius: var(--radius-30);
+}
+.destination-card:where(:hover, :focus-within) .img-cover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+.destination-card .card-price {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: var(--bg-white);
+  color: var(--bg-majorelle-blue);
+  font-weight: var(--weight-semiBold);
+  padding: 5px 12px;
+  font-size: 1.6rem;
+  line-height: 1.45;
+  border-radius: var(--radius-pill);
+  -webkit-border-radius: var(--radius-pill);
+  -moz-border-radius: var(--radius-pill);
+  -ms-border-radius: var(--radius-pill);
+  -o-border-radius: var(--radius-pill);
+}
+.destination-card .card-title {
+  margin-block: 15px 5px;
+  transition: var(--transition-1);
+  -webkit-transition: var(--transition-1);
+  -moz-transition: var(--transition-1);
+  -ms-transition: var(--transition-1);
+  -o-transition: var(--transition-1);
+}
+.destination-card .card-title:where(:hover, :focus-visible) {
+  color: var(--bg-majorelle-blue);
+}
+.destination-card :where(.card-rating, .span) {
+  display: flex;
+  align-items: center;
+}
+.destination-card .card-rating {
+  margin-block-start: 10px;
+  gap: 10px;
+}
+.destination-card .card-rating .span {
+  background-color: var(--bg-sunglow-alpha-10);
+  gap: 5px;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  -webkit-border-radius: var(--radius-pill);
+  -moz-border-radius: var(--radius-pill);
+  -ms-border-radius: var(--radius-pill);
+  -o-border-radius: var(--radius-pill);
+}
+.destination-card .card-rating ion-icon {
+  color: var(--text-sunglow);
+}
+.destination .btn {
+  margin-inline: auto;
+  margin-block-start: 40px;
 }
