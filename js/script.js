@@ -18,6 +18,7 @@ const addEventOnElements = function (elements, eventType, callback) {
 const navbar = document.querySelector("[data-navbar]");
 const navToggler = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
+const navLinks = document.querySelectorAll("[data-navbar] a");
 
 const toggleNav = function () {
   navbar.classList.toggle("active");
@@ -26,10 +27,31 @@ const toggleNav = function () {
 };
 
 addEventOnElements(navToggler, "click", toggleNav);
+addEventOnElements(navLinks, "click", toggleNav);
 
 // Header
 const header = document.querySelector("[data-header]");
 
 window.addEventListener("scroll", function () {
   header.classList[this.scrollY >= 120 ? "add" : "remove"]("active");
+});
+
+let sections = document.querySelectorAll("section");
+
+document.addEventListener("scroll", function () {
+  sections.forEach((section) => {
+    const top = window.scrollY;
+    const offset = section.offsetTop - 180;
+    const height = section.offsetHeight;
+    const id = section.getAttribute("id");
+
+    if (top >= offset && top < offset + height) {
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(id)) {
+          link.classList.add("active");
+        }
+      });
+    }
+  });
 });
