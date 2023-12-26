@@ -1217,3 +1217,48 @@ body.nav-active {
     gap: 40px;
   }
 }
+
+/* Responsive for larger than 1400px screen */
+@media (min-width: 1400px) {
+  /* +++ Custom Property +++ */
+  :root {
+    /* Typography */
+    --fontSize-1: 7.2rem;
+  }
+
+  /* +++ Reused Style +++ */
+  .container {
+    max-width: 1350px;
+  }
+
+  /* +++ Header +++ */
+  .navbar-list {
+    gap: 70px;
+  }
+
+  /* +++ Service +++ */
+  .service .section-title {
+    margin-block-end: 20px;
+  }
+  .service .title-wrapper {
+    grid-column: auto;
+    padding-inline: 0;
+  }
+  .service .container {
+    grid-template-columns: 1fr repeat(3, 0.9fr);
+    gap: 50px;
+  }
+  .service-card:nth-child(3) {
+    margin-block-start: 80px;
+  }
+
+  /* +++ Destination +++ */
+  .destination-list {
+    gap: 50px;
+  }
+
+  /* +++ Footer +++ */
+  .footer-top {
+    padding-block-end: 80px;
+  }
+}
