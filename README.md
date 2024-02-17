@@ -4,7 +4,7 @@
 
 Travelia is a fully responsive website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
 
-<a href="https://billalben.github.io/Travelia-Website/"><strong>➥ Live Demo</strong></a>
+<a href="https://billalben.github.io/travelia/"><strong>➥ Live Demo</strong></a>
 
 <!-- ### Demo Screenshots
 ![Travelia Website Demo]() -->
