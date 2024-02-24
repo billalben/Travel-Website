@@ -55,3 +55,6 @@ document.addEventListener("scroll", function () {
     }
   });
 });
+
+// dynamic year copyright
+document.querySelector(".current-yr-cp").textContent = new Date().getFullYear();

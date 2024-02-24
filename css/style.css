@@ -828,6 +828,9 @@ body.nav-active {
   color: var(--bg-ocean-blue);
   text-decoration: underline;
 }
+.current-yr-cp {
+  display: inline-block;
+}
 
 /* === Media Queries === */
 /* Responsive for larger than 575px screen */
